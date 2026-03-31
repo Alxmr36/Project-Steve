@@ -25,3 +25,4 @@ def createPallet():
         print("You now have", boxes, "boxes on the pallet")
 
 print (createPallet())        
+

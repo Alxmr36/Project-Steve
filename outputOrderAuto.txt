@@ -1,0 +1,11 @@
+we need to make lists and a dictionary for storing the items tat we read in from a file
+
+use the method called pickItems, making the code readable and adaptable
+
+make a method called outputOrder
+we need to open a file
+read each line
+get the numbers of items for the robot to aquire in the order
+
+at the end of the method, make another called outputOrderAuto which will output statements to reflect the items listed in the file
+

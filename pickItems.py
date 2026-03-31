@@ -31,9 +31,13 @@ def pickItems():
             print("Invalid index. Please try again.")
 
     return selected_items
-
-
-def main():
+def outputOrderAuto():
+    while True:
+        with open("order.csv","r") as order_file:
+            order = order_file.readlines()
+            for line in order:
+              return line.strip()
+def outputOrder():
     # Call the pickItems method to let the user select item types until they quit
     selected_items = pickItems()
 
@@ -44,6 +48,9 @@ def main():
     print("Paint count is", selected_items.count("Paint"))
     print("Hardware count is", selected_items.count("Hardware"))
     print("Lumber count is", selected_items.count("Lumber"))
+
+def main():
+    outputOrder(outputOrderAuto())
 
 if __name__ == "__main__":
     main()
