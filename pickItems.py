@@ -31,12 +31,16 @@ def pickItems():
             print("Invalid index. Please try again.")
 
     return selected_items
+
+
 def outputOrderAuto():
     while True:
+
         with open("order.csv","r") as order_file:
-            order = order_file.readlines()
-            for line in order:
-              return line.strip()
+           order = order_file.read().splitlines()
+           return order
+        
+        
 def outputOrder():
     # Call the pickItems method to let the user select item types until they quit
     selected_items = pickItems()
