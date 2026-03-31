@@ -32,14 +32,6 @@ def pickItems():
 
     return selected_items
 
-
-def outputOrderAuto():
-    while True:
-
-        with open("order.csv","r") as order_file:
-           order = order_file.read().splitlines()
-           return order
-        
         
 def outputOrder():
     # Call the pickItems method to let the user select item types until they quit
@@ -54,7 +46,7 @@ def outputOrder():
     print("Lumber count is", selected_items.count("Lumber"))
 
 def main():
-    outputOrder(outputOrderAuto())
+    outputOrder()
 
 if __name__ == "__main__":
     main()
